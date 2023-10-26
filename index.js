@@ -48,4 +48,25 @@ function startClock(){
     
     startClock()
     
-    
+    function getDate(){
+        let date = new Date();
+
+        let year = date.getFullYear();
+        let month = date.getMonth();
+        let number = date.getDate();
+        let day = date.getDay();
+
+        let today = document.getElementById("today");
+
+        let monthNames = ["Januray", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+        let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+        let todayIs = dayNames[day] + " " + monthNames[month] + ", " + number;
+
+        today.innerHTML = todayIs;
+
+
+    }
+
+    getDate()
