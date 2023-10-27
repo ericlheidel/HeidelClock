@@ -55,6 +55,7 @@ function startClock(){
         let month = date.getMonth();
         let number = date.getDate();
         let day = date.getDay();
+        // let ending = "st";  <---"st", "nd", "rd", or "th"
 
         let today = document.getElementById("today");
 
@@ -62,7 +63,26 @@ function startClock(){
 
         let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
+        // THIS IS ME TRYING TO FIGURE OUT THE ending VARIABLE
+        // number = (number % 10 == 1) ? ending = number + "st" : ending = "";
+        // number = (number % 10 == 2) ? ending = number + "nd" : ending = "";
+        // number = (number % 10 == 3) ? ending = number + "rd" : ending = "";
+        // number = (number % 10 == 4) ? ending = number + "th" : ending = "";
+        // number = (number % 10 == 5) ? ending = number + "th" : ending = "";
+        // number = (number % 10 == 6) ? ending = number + "th" : ending = "";
+        // number = (number % 10 == 7) ? ending = number + "th" : ending = "";
+        // number = (number % 10 == 8) ? ending = number + "th" : ending = "";
+        // number = (number % 10 == 9) ? ending = number + "th" : ending = "";
+        // number = (number % 10 == 0) ? ending = number + "th" : ending = "";
+
+        // endingArray[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+        // for (i = 0; i < endingArray; i++){
+        //     if (10 % i)
+        // }
+        
         let todayIs = dayNames[day] + " " + monthNames[month] + ", " + number;
+
 
         today.innerHTML = todayIs;
 
