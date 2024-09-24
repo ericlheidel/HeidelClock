@@ -1,32 +1,45 @@
 html {
-    margin: 0, auto;
+  margin: 0 auto;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
-    padding: 20px;
-    margin: auto;
-    width: 50vw;
-    font-size: 50px;
-    min-width: 500px;
+  padding: 20px;
+  margin: auto;
+  width: 50vw;
+  font-size: 50px;
+  min-width: 500px;
 }
-
 
 #clock,
 #today {
-    margin: 0, auto;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 400;
-    font-size: 100px;
-    min-width: 500px;
+  margin: 0 auto;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  min-width: 500px;
 }
 
 #today {
-    font-size: 50px;
-    text-align: center;
+  font-size: 50px;
+  text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  button {
+    font-size: 30px; /* Smaller button text on mobile */
+    padding: 15px; /* Adjust button padding */
+  }
+
+  #clock,
+  #today {
+    font-size: 40px; /* Smaller clock and date text on mobile */
+    min-width: auto; /* Remove min-width restriction on mobile */
+  }
 }
