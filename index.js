@@ -65,7 +65,7 @@ function getDate() {
   let today = document.getElementById("today")
 
   let monthNames = [
-    "Januray",
+    "January",
     "February",
     "March",
     "April",
