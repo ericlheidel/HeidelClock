@@ -3,9 +3,15 @@ function startClock() {
   let h = date.getHours()
   let m = date.getMinutes()
   let s = date.getSeconds()
-  let ampm = "AM"
+  let ampm = ""
 
   let clock = document.getElementById("clock")
+
+  if (h < 12) {
+    ampm = "AM"
+  } else {
+    ampm = "PM"
+  }
 
   if (h == 0) {
     h = 12
